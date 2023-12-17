@@ -1,0 +1,11 @@
+{
+  "name": "impulsebot",
+  "version": "1.0.0",
+  "description": "Telegram Bot for Impulse Volley Team",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vladimir Karpunin",
+  "license": "ISC"
+}
