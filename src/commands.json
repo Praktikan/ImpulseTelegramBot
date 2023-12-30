@@ -1,0 +1,10 @@
+[
+  {
+    "command": "start",
+    "description": "Начать общение с ботом."
+  },
+  {
+    "command": "logout",
+    "description": "Админ, выходи!"
+  }
+]

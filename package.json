@@ -2,10 +2,24 @@
   "name": "impulsebot",
   "version": "1.0.0",
   "description": "Telegram Bot for Impulse Volley Team",
-  "main": "index.js",
+  "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec ts-node src/index.ts"
   },
   "author": "Vladimir Karpunin",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@types/node-telegram-bot-api": "^0.64.1",
+    "dotenv": "^16.3.1",
+    "node-telegram-bot-api": "^0.64.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
 }
